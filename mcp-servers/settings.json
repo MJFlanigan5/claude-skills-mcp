@@ -1,0 +1,91 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "description": "Browser automation, scraping, and E2E testing"
+    },
+    "notion": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@notionhq/notion-mcp-server"
+      ],
+      "env": {
+        "OPENAPI_MCP_HEADERS": "{\"Authorization\": \"Bearer YOUR_NOTION_API_KEY\", \"Notion-Version\": \"2022-06-28\"}"
+      },
+      "description": "Notion workspace integration"
+    },
+    "stripe": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cloud9-labs/mcp-stripe"
+      ],
+      "env": {
+        "STRIPE_SECRET_KEY": "YOUR_STRIPE_SECRET_KEY"
+      },
+      "description": "Stripe revenue and payment data"
+    },
+    "figma": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "figma-context-mcp"
+      ],
+      "description": "Figma design files and components"
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "description": "Live library documentation while coding"
+    },
+    "cloudflare": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@cloudflare/mcp-server-cloudflare"
+      ],
+      "description": "Cloudflare deployments and DNS"
+    },
+    "google-analytics": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@iflow-mcp/mcp-server-google-analytics"
+      ],
+      "description": "Google Analytics traffic data"
+    },
+    "scraper": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "scrapeless-mcp-server"
+      ],
+      "description": "Web scraping for research and competitor analysis"
+    },
+    "github": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "YOUR_GITHUB_PAT"
+      },
+      "description": "GitHub repos, issues, PRs, and code"
+    },
+    "homey": {
+      "url": "https://mcp.athom.com",
+      "headers": {
+        "Authorization": "Bearer YOUR_HOMEY_BEARER_TOKEN"
+      },
+      "description": "Homey Pro smart home — control devices, flows, and zones"
+    }
+  }
+}
